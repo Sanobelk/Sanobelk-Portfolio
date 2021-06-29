@@ -1,0 +1,250 @@
+:root{
+    --xp-blue: #285fda;
+    --xp-blue-border:#3589e0;
+    --xp-green:#44ac45;
+    --xp-green-border:#73b263;
+}
+
+html{
+    padding:0;
+    margin:0;
+    font-size:16px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:url('bliss_background.webp')no-repeat center fixed;
+}
+
+
+main{
+}
+
+/*Task Bar*/
+
+header{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:50px;
+    width:100%;
+    background-image:linear-gradient(#285fda,#3589e0); 
+    border-top:3px solid var(--xp-blue-border);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/*Start Button*/
+
+nav{
+    width:150px;
+    height:50px;
+    background-image:linear-gradient(var(--xp-green-border),var(--xp-green),var(--xp-green-border));
+    border-radius:5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/*Start Button Active*/
+
+.menu-active{
+    background-image:linear-gradient(#1f6823,#1f683a, #1f6823);
+}
+
+#start-button-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav #start-button-icon{
+    width:30px;
+    height:auto;
+}
+
+nav #start-button-txt{
+    font-size:2rem;
+    font-family:arial;
+    font-weight:bold;
+    font-style:italic;
+    color:white;
+    text-shadow:1px 1px 1px darkgreen;
+}
+
+
+nav:hover{
+    background-image:linear-gradient(#1f6823,#1f683a, #1f6823);
+}
+
+#start-menu-container{
+    background-color:white;
+    position:absolute;
+    bottom:53px;
+    left:0px;
+    width:600px;
+    height:700px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+}
+
+.menu-hidden{
+    display:none;
+}
+
+/*Menu Design*/
+
+#menu-top{
+    height:100px;
+    width:100%;
+    background-image:linear-gradient(var(--xp-blue),#448be7);
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    border-top:1px solid lightblue;
+
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+#menu-top h1{
+    color:white;
+    font-family:arial;
+    font-weight:bold;
+    padding-left:30px;
+    text-shadow:1px 1px 1px darkblue;
+}
+
+#menu-main-content{
+    display:flex;
+    height:520px;
+    width:100%;
+}
+
+#menu-main-content-left,#menu-main-content-right{
+    width:50%;
+    height:100%;
+}
+
+
+/*Menu Left*/
+
+#menu-main-content-left{
+margin:0;
+padding:0;
+}
+
+#menu-main-content-left ul{
+    list-style-type:none;
+}
+
+.menu-inner-button{
+    margin:0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:-30px;
+    font-family:arial;
+    color:darkslategray;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+.menu-inner-button:hover{
+    background-color:lightblue;
+    cursor:pointer;
+}
+.menu-inner-button img{
+    padding-right:15px;
+}
+
+.menu-icon{
+    width:50px;
+    height:auto;
+}
+
+
+
+
+
+/*Menu Right*/
+
+
+
+#menu-main-content-right{
+    background-color:#d1e1f8;
+    border-left:3px solid #b6c7d7;
+}
+
+#menu-main-content-right ul{
+    list-style-type:none;
+}
+
+.right-side-button{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    font-size:1.2rem;
+    font-family:arial;
+}
+.right-side-button img{
+    padding-right:20px;
+}
+
+
+
+/*Menu Bottom*/
+
+#menu-bottom{
+    width:100%;
+    height:79px;
+    background-image:linear-gradient(var(--xp-blue),#448be7);
+    display:flex;
+    justify-content:flex-end;
+}
+
+.menu-bottom-button{
+    display:flex;
+    align-items:center;
+    font-family:arial;
+    font-size:1.3rem;
+    color:white;
+    font-weight:bold;
+}
+
+#menu-bottom ul{
+    list-style-type:none;
+    display:flex;
+}
+
+#menu-bottom li{
+    padding-right:30px;
+}
+
+#menu-bottom li:hover{
+    cursor:pointer;
+    text-shadow:5px 5px 5px black;
+}
+
+#menu-bottom img{
+    padding-right:10px;
+}
+
+
+
+
+
+
+
+
+
+/*Right side of task bar*/
+
+#taskbar-timer-container{
+    color:white;
+    padding-right:10px;
+}
