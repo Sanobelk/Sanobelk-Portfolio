@@ -67,7 +67,7 @@
     <main>
 
 
-        <div id="about-container" class="desktop-window ">
+        <div id="about-container" class="desktop-window hidden">
             <div class="desktop-window-topbar">
                 <h2>ABOUT</h2>
                 <ul class="desktop-window-nav">
@@ -143,7 +143,7 @@ function menuToggle(){
 }
 
 
-/*Menu Buttons*/ 
+///////////////////////*Menu Buttons*///////////////////////
 
 
 /*About Button*/
@@ -187,10 +187,10 @@ resources_button.addEventListener('click',function(){
 
 
 
+///////////////////////*About Window*///////////////////////
 
 
-
-/*About Section*/
+/*Close Button*/
 
 const about_close_button = document.getElementById('about_close_button');
 
@@ -199,15 +199,83 @@ about_close_button.addEventListener('click',function(){
     container.classList.toggle('hidden');
 });
 
-/*My Work Section*/ 
-const mywork_close_button = document.getElementById('mywork_close_button');
+/*Maximize Button*/
 
+const about_maximize_button = document.getElementById('about_maximize_button');
+
+about_maximize_button.addEventListener('click',function(){
+
+
+    let container = document.getElementById('about-container');
+
+    if(container.classList.contains('window-max')){
+        container.style.left = 500 + 'px';
+        container.style.bottom = 300 + 'px';
+        container.style.width = 600 + 'px';
+        container.style.height =  600 + 'px';
+        container.querySelector('.desktop-window-topbar ul').style.height='';
+        container.classList.remove('window-max');
+
+    }else{
+        container.style.left = 0;
+        container.style.bottom = 0;
+        container.style.width = '100%';
+        container.style.height = '100%';
+        container.style.zIndex = -100;
+    container.classList.add('window-max');
+    container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
+    }
+});
+
+
+///////////////////////*My Work*///////////////////////
+
+
+/*Close Button*/
+const mywork_close_button = document.getElementById('mywork_close_button');
 mywork_close_button.addEventListener('click',function(){
     let container = document.getElementById('mywork-container');
     container.classList.toggle('hidden');
 });
 
-/*Resources Section*/ 
+/*Maximize Button*/ 
+
+const mywork_maximize_button = document.getElementById('mywork_maximize_button');
+
+mywork_maximize_button.addEventListener('click',function(){
+
+
+    let container = document.getElementById('mywork-container');
+
+    if(container.classList.contains('window-max')){
+        container.style.left = 100 + 'px';
+        container.style.bottom = 200 + 'px';
+        container.style.width = 500 + 'px';
+        container.style.height =  600 + 'px';
+        container.querySelector('.desktop-window-topbar ul').style.height='';
+        container.classList.remove('window-max');
+
+    }else{
+        container.style.left = 0;
+        container.style.bottom = 0;
+        container.style.width = '100%';
+        container.style.height = '100%';
+        container.style.zIndex = -100;
+    container.classList.add('window-max');
+    container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
+    }
+});
+
+
+
+
+
+
+
+///////////////////////*RESOURCES*///////////////////////
+
+
+/*Close Button*/
 const resources_close_button = document.getElementById('resources_close_button');
 
 resources_close_button.addEventListener('click',function(){
@@ -215,6 +283,34 @@ resources_close_button.addEventListener('click',function(){
     container.classList.toggle('hidden');
 });
 
+
+/*Maximize Button*/ 
+
+const resources_maximize_button = document.getElementById('resources_maximize_button');
+
+resources_maximize_button.addEventListener('click',function(){
+
+
+    let container = document.getElementById('resources-container');
+
+    if(container.classList.contains('window-max')){
+        container.style.left = 700 + 'px';
+        container.style.bottom = 100 + 'px';
+        container.style.width = 900 + 'px';
+        container.style.height =  600 + 'px';
+        container.querySelector('.desktop-window-topbar ul').style.height='';
+        container.classList.remove('window-max');
+
+    }else{
+        container.style.left = 0;
+        container.style.bottom = 0;
+        container.style.width = '100%';
+        container.style.height = '100%';
+        container.style.zIndex = -100;
+    container.classList.add('window-max');
+    container.querySelector('.desktop-window-topbar ul').style.height=30 + 'px';
+    }
+});
 
 
 
