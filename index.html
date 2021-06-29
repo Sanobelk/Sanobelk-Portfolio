@@ -13,29 +13,29 @@
 
     <header>
 
-        <nav id="nav" class="not-pressed">
+        <nav id="nav" class="not-pressed" title="Click Me to Start">
             <div id="start-button-container">
                 <img id="start-button-icon" src="start_smiley.png">
                 <div id="start-button-txt">start</div>
             </div><!--start-button-container--> 
         </nav>
-        <div id="start-menu-container" class="menu-hidden">
+        <div id="start-menu-container" class="hidden">
 
             <div id="menu-top">
-                <h1>Sanobelk</h1>
+                <h1>Admin</h1>
             </div>
 
             <div id="menu-main-content">
                 <div id="menu-main-content-left">
                 <ul>
-                    <li id="about-button" class="menu-inner-button"><img id="about-icon" class="menu-icon" src="iconfinder_20147_windows_messenger_icon_128px.png">About</li>
-                    <li id="mywork-button" class="menu-inner-button"><img id="work-icon" class="menu-icon" src="iconfinder_40885_windows_icon_128px.png">My Work</li>
+                    <li id="about-button" class="menu-inner-button" title="About Me!"><img id="about-icon" class="menu-icon" src="iconfinder_20147_windows_messenger_icon_128px.png">About</li>
+                    <li id="mywork-button" class="menu-inner-button" title="Stuff I've Made."><img id="work-icon" class="menu-icon" src="iconfinder_40885_windows_icon_128px.png">My Work</li>
                 </ul>
                 </div>
 
                 <div id="menu-main-content-right">
                     <ul>
-                        <li id="resources-button" class="right-side-button"><img src="chain.png" id="resources-icon" class="menu-icon">Resources</li>
+                        <li id="resources-button" class="right-side-button" title="Resources I've found useful."><img src="chain.png" id="resources-icon" class="menu-icon">Resources</li>
                     
                     </ul>
                 </div>
@@ -44,9 +44,9 @@
 
             <div id="menu-bottom">
                 <ul>
-                    <li id="github-button" class="menu-bottom-button"><img id="github-icon" class="menu-icon" src="github.png">Github</li>
+                    <li id="github-button" class="menu-bottom-button" title="Visit my Github"><img id="github-icon" class="menu-icon" src="github.png">Github</li>
 
-                    <li id="contact-button" class="menu-bottom-button">
+                    <li id="contact-button" class="menu-bottom-button" title="Contact Me">
                         <img src="phone.png" id="contact-icon" class="menu-icon">Contact
                     </li>
                 </ul>
@@ -65,6 +65,50 @@
     </header>
 
     <main>
+
+
+        <div id="about-container" class="desktop-window ">
+            <div class="desktop-window-topbar">
+                <h2>ABOUT</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="minimize_button.png" class="desktop-window-button minimize-button" id="about_minimize_button" title="Minimize"> </li>
+                    <li><img src="maximize_button.png" class="desktop-window-button maximize-button" id="about_maximize_button" title="Maxmize"> </li>
+                    <li><img src="close_button.png" class="desktop-window-button close-button" id="about_close_button" title="Close"></li>
+                </ul>
+            </div>
+            <section id="about-content">
+            
+                <h3>About Me</h3>
+                <p>My name is *redacted* and I'm an aspiring web developer.</p>
+            
+            </section>
+        </div>
+
+        <div id="mywork-container" class="desktop-window hidden">
+            <div class="desktop-window-topbar">
+                <h2>MY WORK</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="minimize_button.png" class="desktop-window-button minimize-button" id="mywork_minimize_button" title="Minimize"> </li>
+                    <li><img src="maximize_button.png" class="desktop-window-button maximize-button" id="mywork_maximize_button" title="Maxmize"> </li>
+                    <li><img src="close_button.png" class="desktop-window-button close-button" id="mywork_close_button" title="Close"></li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div id="resources-container" class="desktop-window hidden">
+            <div class="desktop-window-topbar">
+            <h2>RESOURCES</h2>
+                <ul class="desktop-window-nav">
+                    <li><img src="minimize_button.png" class="desktop-window-button minimize-button" id="resources_minimize_button" title="Minimize"> </li>
+                    <li><img src="maximize_button.png" class="desktop-window-button maximize-button" id="resources_maximize_button" title="Maxmize"> </li>
+                    <li><img src="close_button.png" class="desktop-window-button close-button" id="resources_close_button" title="Close"></li>
+                </ul>
+            </div>
+        
+        </div>
+
+
 
     </main>
     
@@ -93,9 +137,86 @@ startButton.addEventListener('click',function()
 
 function menuToggle(){
     let menu =  document.getElementById('start-menu-container');
-    menu.classList.toggle('menu-hidden');
+    menu.classList.toggle('hidden');
     startButton.classList.toggle('menu-active');
+    menu.style.zIndex = '100';
 }
+
+
+/*Menu Buttons*/ 
+
+
+/*About Button*/
+
+let menu_about_button = document.getElementById('about-button');
+
+menu_about_button.addEventListener('click',function(){
+
+    let container = document.getElementById('about-container');
+
+    container.classList.toggle('hidden');
+    document.getElementById('start-menu-container').classList.toggle('hidden');
+});
+
+
+/*My Work Button*/
+
+let menu_mywork_button = document.getElementById('mywork-button');
+
+menu_mywork_button.addEventListener('click',function(){
+    let container = document.getElementById('mywork-container');
+    container.classList.toggle('hidden');
+    document.getElementById('start-menu-container').classList.toggle('hidden');
+});
+
+
+/*Resources Button*/ 
+
+let resources_button = document.getElementById('resources-button');
+
+resources_button.addEventListener('click',function(){
+    let container = document.getElementById('resources-container');
+    container.classList.toggle('hidden');
+    document.getElementById('start-menu-container').classList.toggle('hidden');
+});
+
+
+/*Github Button */
+
+/*Contact Button */ 
+
+
+
+
+
+
+/*About Section*/
+
+const about_close_button = document.getElementById('about_close_button');
+
+about_close_button.addEventListener('click',function(){
+    let container = document.getElementById('about-container');
+    container.classList.toggle('hidden');
+});
+
+/*My Work Section*/ 
+const mywork_close_button = document.getElementById('mywork_close_button');
+
+mywork_close_button.addEventListener('click',function(){
+    let container = document.getElementById('mywork-container');
+    container.classList.toggle('hidden');
+});
+
+/*Resources Section*/ 
+const resources_close_button = document.getElementById('resources_close_button');
+
+resources_close_button.addEventListener('click',function(){
+    let container = document.getElementById('resources-container');
+    container.classList.toggle('hidden');
+});
+
+
+
 
 </script>
 </html>
