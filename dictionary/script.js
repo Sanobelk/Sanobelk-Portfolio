@@ -32,7 +32,7 @@ submit.addEventListener('click',async function(){
         });
         userSubmission.value = '';
         addEntry(fetchWord, fetchDefinition);
-        let container = document.getElementById('container');
+        let container = document.getElementById('content');
         container.scrollTop = container.scrollHeight;
 });
 

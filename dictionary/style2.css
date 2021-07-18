@@ -1,0 +1,42 @@
+html, body, h1{
+    padding:0;
+    margin:0;
+    overflow-y:hidden;
+    font-family:arial;
+}
+
+body{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:20% 65vh auto;
+}
+
+#content{
+    overflow-y:scroll;
+    background-color:lightblue;
+}
+
+#content ol{
+    margin-left:-30px;
+}
+
+#content li{
+    background-color:whitesmoke;
+    margin:5px;
+    list-style-type:none;
+    padding:20px;
+    font-size:16pt;
+}
+
+#submission_box{
+    position:fixed;
+    bottom:0;
+    background-color:lightgray;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+#userSubmission, .bar_button{
+    padding:10px;
+}
