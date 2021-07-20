@@ -5,15 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
 
-<div class="container-fluid bg-dark py-5 align-items-center justify-content-center">
 
-    <div class="container" id="header">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand fs-3 fw-bold" id="navbar_title">Mason's Helping Paw</a>
+
+        <span id="top-nav-social">
+                
+                <a href="instagram.com"><img class="link_image" src="instagram.png" alt=""></a>
+                <a href="linktree.com"><img src="linktree.jpg" alt="" class="link_image"></a>
+                </li><a href="chewy.com"><img src="chewy.png" alt="" class="link_image"></a>
+                </span>
+
+
+
+        <button class="navbar-toggler" type='button' data-bs-toggle='collapse'data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+        
+                
+
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mt-2 mb-2 mb-lg-0">
+                <li class="nav-item fw-bold">
+                    <a href="#about" class="nav-link" aria-current="page">About</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#who_is_mason" class="nav-link" aria-current="page">Who's Mason?</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#rescues" class="nav-link" aria-current="page">Rescues</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#adopt" class="nav-link" aria-current="page">Adopt</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#previousAdoptions" class="nav-link" aria-current="page">Rescued</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#donate" class="nav-link" aria-current="page">Donate</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#contact" class="nav-link" aria-current="page">Contact</a>
+                </li>
+                <li class="nav-item li-social-links">
+                    <a href="instagram.com"><img class="link_image" src="instagram.png" alt=""></a>
+                    <a href="linktree.com"><img class="link_image" src="linktree.jpg"></a>
+                    <a href="chewy.com"><img class="link_image" src="chewy.png"></a>
+
+                </li>
+            
+            </ul>
+        </div>
+    
+    </div>
+
+
+</nav>
+
+
+
+
+
+
+<div class="container-fluid bg-dark py-5">
+    <div class="container align-items-center justify-content-center" id="header">
         <div class="row align-items-center">
             <div class="col-6">
                 <img class="img-fluid rounded" src="mason_helping_paw_logo.PNG" alt="">
@@ -23,10 +86,9 @@
             </div>
         </div>
     </div>
-
 </div>
 
-<div class="container text-dark">
+<div class="container-fluid text-dark">
 
     <div class="container" id="about">
 
@@ -41,16 +103,16 @@
     </div>
 </div>
 
-<div class="container-fluid bg-warning text-dark" id="who_is_mason">
+<div class="container-fluid text-white bg-dark" id="who_is_mason">
 
-        <div class="row align-items-center mt-5 py-5">
-            <div class="col-md-6">
+        <div class="row align-items-center py-5">
+            <div class="col-md-12 col-lg-6">
             
                 <img class="img-fluid p-5" id="mason_image" src="image2.jpeg">
 
             </div>
 
-            <div class="col col-mdtext-center">
+            <div class="col col-md col-lg text-center">
                 <h2 class=" fs-1 fw-bolder pb-3">Who is Mason?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut itaque doloremque laborum error, assumenda minus sit temporibus laboriosam molestiae magnam sint nobis recusandae id fuga commodi deleniti, ducimus nam quasi, obcaecati labore. Minus possimus harum tempora veritatis doloremque at numquam maiores veniam ea, incidunt facere quo expedita voluptate praesentium illo ad quos! Odio ipsa suscipit excepturi laborum iusto repellendus maiores quasi, fugiat tenetur, neque enim eaque! Voluptatem laboriosam tempore facilis provident qui doloribus numquam esse cum eum. Iure, quos odio! Tenetur odit at laborum esse dolor asperiores cumque. Eum harum dolores autem qui voluptates? Iusto exercitationem ratione ipsa saepe similique!</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut itaque doloremque laborum error, assumenda minus sit temporibus laboriosam molestiae magnam sint nobis recusandae id fuga commodi deleniti, ducimus nam quasi, obcaecati labore. Minus possimus harum tempora veritatis doloremque at numquam maiores veniam ea, incidunt facere quo expedita voluptate praesentium illo ad quos! Odio ipsa suscipit excepturi laborum iusto repellendus maiores quasi, fugiat tenetur, neque enim eaque! Voluptatem laboriosam tempore facilis provident qui doloribus numquam esse cum eum. Iure, quos odio! Tenetur odit at laborum esse dolor asperiores cumque. Eum harum dolores autem qui voluptates? Iusto exercitationem ratione ipsa saepe similique!</p>
@@ -60,21 +122,21 @@
     </div>
 </div>
 
-<div class="container-fluid bg-dark text-white" id="rescues">
+<div class="container bg-white text-dark" id="rescues">
     <h2 class="text-center fs-1 fw-bold mb-5 pt-5">Rescues</h2>
     <div class="row px-3">
         <div class="col-12 col-md-4">
-            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid pb-5">
             <h3 class="text-center">Adopt</h3>
             <p class="text-justify mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore tempora consectetur inventore eum vero porro modi, natus officia provident expedita distinctio voluptatem ipsam reprehenderit a cupiditate, assumenda laudantium ratione nihil!</p>
         </div>
         <div class="col-12 col-md-4">
-            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid pb-5">
             <h3 class="text-center">Adopt</h3>
             <p class="text-justify mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore tempora consectetur inventore eum vero porro modi, natus officia provident expedita distinctio voluptatem ipsam reprehenderit a cupiditate, assumenda laudantium ratione nihil!</p>
         </div>
         <div class="col-12 col-md-4">
-            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid pb-5">
             <h3 class="text-center">Adopt</h3>
             <p class="text-justify mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore tempora consectetur inventore eum vero porro modi, natus officia provident expedita distinctio voluptatem ipsam reprehenderit a cupiditate, assumenda laudantium ratione nihil!</p>
         </div>
@@ -83,17 +145,152 @@
 
 </div>
 
-<div class="container-fluid py-5" id="adopt">
+<hr class="mx-5">
+
+<div class="container" id="adopt">
+
 
     <div class="row">
+
+        <div class="col-lg-3"></div>
     
     
-        <div class="col text-center">
+        <div class="col col-lg-6 text-center">
         
             <h2 class="fw-bold fs-1">Looking to Adopt?</h2>
-        
+
+            <p class="mt-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci pariatur saepe quibusdam cum sit doloribus debitis id deserunt numquam ut, quidem nemo laborum. Quo exercitationem illo aliquid, magni corporis enim.</p>
+
+            <h3 class="pb-5">Adoption Process</h3>
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>1. Submit Application</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rem, aspernatur ipsam laboriosam adipisci accusamus optio porro labore? Sed atque fuga error necessitatibus perferendis animi modi cum quaerat odio, pariatur, voluptate porro? Nihil suscipit rem reiciendis sunt totam, commodi, maiores, nulla est dolorum dolorem recusandae eaque perferendis alias pariatur sit labore! Ut ex quisquam optio ipsa laboriosam quam commodi eum. Sed asperiores blanditiis quibusdam a accusantium incidunt illum, rem illo, possimus officia natus facere eos optio labore perferendis animi recusandae?
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>2. Interview</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque molestiae a labore. Reprehenderit doloremque distinctio sequi voluptatem odio unde nam eaque optio! Perferendis delectus laudantium excepturi ducimus architecto ut soluta, a eaque modi possimus voluptate sed cumque recusandae culpa provident explicabo, consequatur veritatis tempora magni et tenetur sint ex aperiam beatae! Ea eos nostrum totam doloribus, voluptatum dolores incidunt maxime officiis natus adipisci veritatis amet ipsa. Maiores deleniti dolores tempora eligendi ratione, obcaecati magnam! Velit recusandae sed veniam rerum error?
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>3. Meet the Pet</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, incidunt magnam autem esse accusamus illum debitis quibusdam minima vel error consequatur. Suscipit aut blanditiis dicta laudantium dignissimos cum officiis corrupti quasi illo dolore ratione quas rem maiores non autem, consequatur, vitae id quibusdam, eaque mollitia quis soluta aliquam at. Ipsam dignissimos odit, fuga quasi doloremque nulla inventore provident sapiente repellendus earum molestias cumque, quis ratione deleniti eum nobis nemo officia magnam nihil odio delectus saepe? Adipisci beatae molestiae fugiat aliquid.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type='button'
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                    aria-expanded='false' aria-controls='collapseFour'>
+                        <strong>4. Home Check</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium at sequi similique fuga laborum enim impedit harum. Inventore, doloribus quis. Quas earum mollitia porro? Saepe minima delectus illo alias corporis, impedit molestias, qui natus debitis eligendi tempore? Quidem inventore voluptatum qui perferendis, quaerat et doloremque architecto perspiciatis soluta eum, amet, deserunt repellat repudiandae modi tempora ut totam deleniti. Asperiores laudantium nisi rem omnis! Odit sequi, a vitae atque soluta perferendis eum porro neque omnis, nihil pariatur nulla blanditiis laborum!
+                    </div>
+                    </div>
+                
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type='button'
+                    data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                    aria-expanded='false' aria-controls='collapseFive'>
+                        <strong>5. Approve Application</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium at sequi similique fuga laborum enim impedit harum. Inventore, doloribus quis. Quas earum mollitia porro? Saepe minima delectus illo alias corporis, impedit molestias, qui natus debitis eligendi tempore? Quidem inventore voluptatum qui perferendis, quaerat et doloremque architecto perspiciatis soluta eum, amet, deserunt repellat repudiandae modi tempora ut totam deleniti. Asperiores laudantium nisi rem omnis! Odit sequi, a vitae atque soluta perferendis eum porro neque omnis, nihil pariatur nulla blanditiis laborum!
+                    </div>
+                    </div>
+                
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type='button'
+                    data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                    aria-expanded='false' aria-controls='collapseSix'>
+                        <strong>6. Sign Adoption Contract</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium at sequi similique fuga laborum enim impedit harum. Inventore, doloribus quis. Quas earum mollitia porro? Saepe minima delectus illo alias corporis, impedit molestias, qui natus debitis eligendi tempore? Quidem inventore voluptatum qui perferendis, quaerat et doloremque architecto perspiciatis soluta eum, amet, deserunt repellat repudiandae modi tempora ut totam deleniti. Asperiores laudantium nisi rem omnis! Odit sequi, a vitae atque soluta perferendis eum porro neque omnis, nihil pariatur nulla blanditiis laborum!
+                    </div>
+                    </div>
+                
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type='button'
+                    data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                    aria-expanded='false' aria-controls='collapseSeven'>
+                        <strong>7. Pay Fee</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium at sequi similique fuga laborum enim impedit harum. Inventore, doloribus quis. Quas earum mollitia porro? Saepe minima delectus illo alias corporis, impedit molestias, qui natus debitis eligendi tempore? Quidem inventore voluptatum qui perferendis, quaerat et doloremque architecto perspiciatis soluta eum, amet, deserunt repellat repudiandae modi tempora ut totam deleniti. Asperiores laudantium nisi rem omnis! Odit sequi, a vitae atque soluta perferendis eum porro neque omnis, nihil pariatur nulla blanditiis laborum!
+                    </div>
+                    </div>
+                
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type='button'
+                    data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                    aria-expanded='false' aria-controls='collapseEight'>
+                        <strong>8. Bring Your Pet Home!</strong>
+                    </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium at sequi similique fuga laborum enim impedit harum. Inventore, doloribus quis. Quas earum mollitia porro? Saepe minima delectus illo alias corporis, impedit molestias, qui natus debitis eligendi tempore? Quidem inventore voluptatum qui perferendis, quaerat et doloremque architecto perspiciatis soluta eum, amet, deserunt repellat repudiandae modi tempora ut totam deleniti. Asperiores laudantium nisi rem omnis! Odit sequi, a vitae atque soluta perferendis eum porro neque omnis, nihil pariatur nulla blanditiis laborum!
+                    </div>
+                    </div>
+                
+                </div>
+
+
+
+            </div>
         
         </div>
+
+        <div class="col-lg-3"></div>
     
     
     
@@ -104,20 +301,101 @@
 
 </div>
 
+<hr class="mx-5">
+
+<div class="container my-5" id="previousAdoptions">
+
+    <h2 class="text-center fs-1 fw-bold">Found a Home</h2>
+
+    <div class="row py-5">
+
+    
+        <div class="col-xs-12">
+        
+            <p class="pt-3">These fur babies were adopted by their lovely new owners. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, similique quas. Ullam enim, repudiandae accusamus soluta eligendi atque facere, animi blanditiis maiores architecto laudantium libero molestiae unde deserunt. Aut ducimus sint, iure temporibus doloribus deserunt iste laudantium ab. Dicta necessitatibus rerum repellat numquam dignissimos aliquid nesciunt, eos tempore nulla error at perspiciatis ea distinctio! At, reprehenderit dicta! Asperiores doloremque quo ab natus, earum velit nemo eaque officiis quis enim nam voluptas voluptates aliquid recusandae corrupti! Eaque maiores ut ullam quos.</p>
+        
+        </div>
+    
+    </div>
+
+
+    <div class="row justify-content-center align-items-center">
+
+    
+        <div class="col-lg-2"></div>
+    
+        <div class="col-xs-12 col-lg-8 py-5">
+
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+
+            <h3>Cutie</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore, voluptatem dolor doloribus distinctio enim amet neque quos iure repellat, rerum quam tenetur nostrum dolore qui officiis sit, harum aperiam.</p>
+        
+        </div>
+
+        <div class="col-lg-2"></div>
+    
+    </div>
+
+    <div class="row justify-content-center align-items-center">
+
+    
+        <div class="col-lg-2"></div>
+    
+        <div class="col-xs-12 col-lg-8 py-5">
+
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+
+            <h3>Cutie</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore, voluptatem dolor doloribus distinctio enim amet neque quos iure repellat, rerum quam tenetur nostrum dolore qui officiis sit, harum aperiam.</p>
+        
+        </div>
+
+        <div class="col-lg-2"></div>
+    
+    </div>
+
+    <div class="row justify-content-center align-items-center">
+
+    
+        <div class="col-lg-2"></div>
+    
+        <div class="col-xs-12 col-lg-8 py-5">
+
+            <img src="https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg" alt="" class="img-fluid">
+
+            <h3>Cutie</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore, voluptatem dolor doloribus distinctio enim amet neque quos iure repellat, rerum quam tenetur nostrum dolore qui officiis sit, harum aperiam.</p>
+        
+        </div>
+
+        <div class="col-lg-2"></div>
+    
+    </div>
 
 
 
-<div class="container text-dark mb-5 pt-5 pb-5 px-5" id="donate">
+
+
+
+
+</div>
+
+
+<hr class="mx-5">
+
+
+<div class="container mb-5 pb-5 px-5" id="donate">
 
     <h2 class="text-center fs-1 fw-bold">Donate</h2>
 
     <div class="row">
     
-        <div class="col text-center">
+        <div class="col-xs-12 text-center">
 
             <p class="fs-5 fw-bold">Lend us a paw by donating to our cause.</p>
 
-            <p class="p-5">Bills add up quick. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id fugiat distinctio obcaecati error minus quae aliquam voluptates doloremque, voluptatibus perferendis doloribus animi incidunt iste eos. Excepturi necessitatibus voluptas minus?</p>
+            <p class="p-3">Bills add up quick. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id fugiat distinctio obcaecati error minus quae aliquam voluptates doloremque, voluptatibus perferendis doloribus animi incidunt iste eos. Excepturi necessitatibus voluptas minus?</p>
 
         </div>
     
@@ -150,15 +428,118 @@
 
 </div>
 
+<div class="container-fluid bg-dark text-white pb-5" id="contact">
+
+    <h2 class="text-center fs-1 fw-bold">Contact</h2>
+
+    <p class="text-center ">Questions? Comments? Concerns? <br>Let's get in touch.</p>
+
+        
+    <div class="row">
+
+        <div class="col col-md-3"></div>
+
+
+        
+
+        <div class="col-8 col-md-6">
+
+            <form>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="input_label_1">First Name</span>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="input_label_2">Last Name</span>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="input_label_3">Number</span>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="input_label_4">Email</span>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div id="form_buttons">
+                    <button class="btn btn-dark border">Send Message</button>
+                    <button type="reset" class="btn btn-dark border">Reset</button>
+                </div>
+                
+            </form>
+        
+        </div>
+
+        <div class="col col-md-4"></div>
+
+    </div>
+
+    <div class="row text-center pt-5">
+    
+        <div class="col">
+        
+        <img src="instagram.png" class="img-fluid" width="100" alt="">
+
+        <p class="p-4">Follow on Instagram!</p>
+        
+        </div>
+
+        <div class="col">
+        
+        <img src="linktree.jpg" class="img-fluid" width="100" alt="">
+
+        <p class="p-4">Check out all my links <br> in one place!</p>
+
+        
+        
+        </div>
+
+        <div class="col">
+        
+        <img src="chewy.png" class="img-fluid" width="100" alt="">
+
+        <p class="p-4">Help donate toys & supplies!</p>
+        
+        </div>
+    
+    
+    
+    </div>
 
 
 
+</div>
+
+<footer id="footer">
+
+<div class="container-fluid">
+
+
+    <div class="row text-center">
+    
+    
+        <div class="col">
+        
+        <p>&copy;Mason's Helping Paw - 2021<br>
+        Made by Sanobelk, 2021</p>
+
+        </div>
+        
+    </div>
+
+</div>
+
+</footer>
 
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+<script src="scripts/script.js"></script> 
 </body>
 <script>
 "use strict";

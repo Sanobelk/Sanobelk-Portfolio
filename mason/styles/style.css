@@ -1,0 +1,86 @@
+.link_image{
+    width:45px;
+    height:auto;
+
+}
+#top-nav-social{
+    display:flex;
+    position:absolute;
+    right:30px;
+    bottom:10px;
+}
+
+#about{
+    padding-top:30px;
+}
+
+#who_is_mason{
+    padding-top:30px;
+}
+
+#rescues{
+    padding-top:30px;
+}
+
+#adopt{
+    padding-top:70px;
+}
+
+#previousAdoptions{
+    padding-top:70px;
+}
+
+#donate{
+    padding-top:70px;
+}
+
+#contact{
+    padding-top:70px;
+}
+
+#form_buttons{
+    display:flex;
+    justify-content:space-around
+}
+
+#form_buttons button{
+    width:150px;
+}
+
+#form_buttons button:hover{
+    background-color:white;
+    color:black;
+}
+
+.li-social-links{
+    display:none;
+}
+
+#footer{
+    background-color:black;
+    color:white;
+}
+
+#input_label_1, #input_label_2, #input_label_3, #input_label_4{
+    width:100px;
+}
+
+@media (max-width:991px){
+    #top-nav-social{
+        right:80px;
+    }
+}
+
+@media (max-width:500px){
+    #top-nav-social{
+        display:none;
+    }
+    .li-social-links{
+        display:flex;
+    }
+}
+@media (max-width:324px){
+    #navbar_title{
+        font-size:1.3rem !important;
+    }
+}
